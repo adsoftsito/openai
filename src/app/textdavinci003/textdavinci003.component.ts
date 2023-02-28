@@ -18,17 +18,13 @@ export class Textdavinci003Component implements OnInit {
 
   postCompletition(){
 
-	  //alert(this.pet);
-
-  let myprompt = `Suggest three names for an animal that is a superhero.
-Animal: Cat
-Names: Captain Sharpclaw, Agent Fluffball, The Incredible Feline
-Animal: Dog
-Names: Ruff the Protector, Wonder Canine, Sir Barks-a-Lot
-Animal: ${this.pet}
-Names:`;
-
-	  //alert(myprompt);
+    let myprompt = `Suggest three names for an animal that is a superhero.
+       Animal: Cat
+       Names: Captain Sharpclaw, Agent Fluffball, The Incredible Feline
+       Animal: Dog
+       Names: Ruff the Protector, Wonder Canine, Sir Barks-a-Lot
+       Animal: ${this.pet}
+       Names:`;
 
     var payload = { 
 	model: "text-davinci-003", 
@@ -42,7 +38,6 @@ Names:`;
 	    //alert(JSON.stringify(data));
 	console.log(data);
         this.result = data.choices[0].text;
-	    //this.goals.push(payload);
 
    });
 

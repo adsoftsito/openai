@@ -1,7 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule} from '@angular/forms';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { Textdavinci003Component } from './textdavinci003/textdavinci003.component';
@@ -10,6 +8,7 @@ import { Textdavinciedit001Component } from './textdavinciedit001/textdavinciedi
 import { ModerationsComponent } from './moderations/moderations.component';
 
 import { HttpClientModule } from '@angular/common/http';
+import { FormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
