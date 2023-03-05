@@ -1,4 +1,4 @@
-import { media } from "./getMedia";
+import { media } from "./media";
 
 describe('media test suite', () => {
   it('Si n = [160, 591, 114, 229,230,270,128,1657,624,1503] retorna 550.6', () => {
