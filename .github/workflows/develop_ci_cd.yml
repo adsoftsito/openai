@@ -1,4 +1,4 @@
-name: master CI, CD workflow 
+name: develop CI, CD workflow 
 on: 
   push:
     branches: [ "develop"]
@@ -18,4 +18,3 @@ jobs:
       - name: Test
         run: |
           npm test -- --no-watch --no-progress --browsers=ChromeHeadlessCI
-Footer
