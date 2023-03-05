@@ -8,13 +8,13 @@ const developmentHours = [15.0, 69.9, 6.5, 22.4, 28.4, 65.9, 19.4, 198.7, 38.8, 
 describe('Standard Deviation test suite', () => {
 
   it('should return 572.03 if the given mean is proxySize', () => {
-    const calculatedMean = mean();
+    const calculatedMean = media();
     const calculatedStdDev = stdDev(proxySize, calculatedMean);
     expect(calculatedStdDev).toBe(572.03);
   });
 
   it('should return 62.26 if the given mean is of the developmentHours', () => {
-    const calculatedMean = mean(developmentHours);
+    const calculatedMean = media(developmentHours);
     const calculatedStdDev = stdDev(developmentHours, calculatedMean);
     expect(calculatedStdDev).toBe(62.26);
   });
