@@ -15,8 +15,11 @@ export class Textdavinci003Component implements OnInit {
 
   result :string = "";
   pet : string  = "";
-
+  key = process.env.NG_APP_KEY;
   postCompletition(){
+    console.log(process.env)
+
+    console.log(this.key)
 
     let myprompt = `Suggest three names for an animal that is a superhero.
        Animal: Cat
