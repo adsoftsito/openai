@@ -37,6 +37,6 @@ jobs:
           docker run -d --name serving_base httpd
       - name: cp angular build to container
         run: |
-          docker cp htdocs  serving_base:/usr/local/apache2/
+          docker cp dist/openai/.  serving_base:/usr/local/apache2/htdocs
           
           
