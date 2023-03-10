@@ -18,6 +18,9 @@ jobs:
       - name: Test
         run: |
           npm test -- --no-watch --no-progress --browsers=ChromeHeadlessCI
+      - name: build angular in htdocs directory
+        run: |
+          npm build --output-dir=htdocs
       - name: make .env 
         uses: SpicyPizza/create-envfile@v1.3
         with:
