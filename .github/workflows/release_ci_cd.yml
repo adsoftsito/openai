@@ -27,4 +27,11 @@ jobs:
       - name: show .env file
         run: |
           cat .env
-
+      - name: download, run httpd image, container name serving_base
+        run: |
+          docker run -d --name serving_base httpd
+      - name: cp angular build to container
+        run: |
+          docker cp htdocs  serving_base:/usr/local/apache2/
+          
+          
