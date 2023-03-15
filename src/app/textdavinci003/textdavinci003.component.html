@@ -8,14 +8,14 @@
       <img src="/assets/dog.png" className=icon />
         <h3>Name my pet</h3>
 	<form>
-          <input
+          <input 
             type="text"
-            name="animal"
+            name="pet"
             placeholder="Enter an animal"
             [(ngModel)]= "pet"
           />
-          <input type="button" value="Generate names" (click)="postCompletition()" />
+          <input type="button" name="generatepet" value="Generate names" (click)="postCompletition()" />
 		</form>
-		<div className=result> {{result}} </div>
+		<div name="result"> {{result}} </div>
       </main>
 </div>
